@@ -1,0 +1,32 @@
+{
+    "1": {
+        "mcq": "Ask the first question",
+        "options": {
+            "a": "option 1",
+            "b": "option 2",
+            "c": "option 3",
+            "d": "option 4"
+        },
+        "correct_answer": "a"
+    },
+    "2": {
+        "mcq": "Ask the second question",
+        "options": {
+            "a": "option 1",
+            "b": "option 2",
+            "c": "option 3",
+            "d": "option 4"
+        },
+        "correct_answer": "b"
+    },
+    "3": {
+        "mcq": "Ask the Third question",
+        "options": {
+            "a": "option 1",
+            "b": "option 2",
+            "c": "option 3",
+            "d": "option 4"
+        },
+        "correct_answer": "d"
+    }
+}

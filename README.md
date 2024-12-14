@@ -6,7 +6,7 @@ This is a simple project which you can use for learning purposes. The following 
 an overall idea of project setup. Reading this along with source code will help you to get overall picture of how to setup a project
 and run it in aws cloud.
 
-Clone this on any cloud server like Amazon and you wi
+Clone this on any cloud server like Amazon AWS EC2 instance and make it live.
 
 1. Install vscode, python plugins
 2. Install git

@@ -23,13 +23,21 @@ Clone this on any cloud server like Amazon AWS EC2 instance and make it live.
 13. create a file setup.py and add code
 	
 from setuptools import setup, find_packages
+
 setup(
+
     name='mcqgenerator',
+
     version='0.0.1',
+
     author='adeeb',
+
     author_email='adeeb.arangodan@gmail.com',
+
     install_requires=['openai', 'langchain', 'streamlit', 'python-dotenv', 'PyPDF2'],
+
     packages=find_packages()
+
 )
 
 14. open requirement.txt and add new line '-e .' to execute setup.py after the installation of packages in requiremnet.txt
@@ -41,24 +49,36 @@ setup(
 20. open mcq.ipynb and set kernel to python in 'env' environment
 21. create a file .env to store environment variable and add .env to .gitignore
 22. from dotenv import load_dotenv
+
     load_dotenv()
+
     os.getenv('OPENAI_API_KEY') will load OPENAI_API_KEY in .env file
+
 23. add .env to .gitignore
 24. Create a StreamlitApp.py file with create a ui
 25. mcqgenerator.py file has code to create LLM, LLMChain, SequentialChain etc
 26. run the app using command: streamlit run StreamlitApp.py.
 
 27. On aws cloud server using linux, use this code to clone the repo and make the project live
+
     sudo apt update
+
     sudo apt-get update
+
     sudo apt upgrade -y
+
     sudo apt install git curl unzip tar make sudo vim wget -y
 
     git clone "Your-repository"
+
     sudo apt install python3-pip, python3-venv
+
     python3 -m venv <your envname>
+
     cd <envname>/bin/activate
+
     pip3 install -r requirements.txt
+
     python3 -m streamlit run StreamlitAPP.py
 
 28. if you want to add openai api key

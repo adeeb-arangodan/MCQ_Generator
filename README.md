@@ -1,3 +1,13 @@
+This is a Generative AI sample project which uses openai llm to generate mcq based on data given by user. User can input data, 
+difficulty level, number of mcq and topic. This has two LLM's connected using langchain. First LLMChain generate MCQ, second
+one check and updates it. It also provide a review of MCQ's.
+
+This is a simple project which you can use for learning purposes. The following steps for creating this project will help you to get
+an overall idea of project setup. Reading this along with source code will help you to get overall picture of how to setup a project
+and run it in aws cloud.
+
+Clone this on any cloud server like Amazon and you wi
+
 1. Install vscode, python plugins
 2. Install git
 3. open cmd, goto workfolder, execute -> code .    (This will open vscode in that directory)
@@ -38,13 +48,16 @@ setup(
 25. mcqgenerator.py file has code to create LLM, LLMChain, SequentialChain etc
 26. run the app using command: streamlit run StreamlitApp.py.
 
-27. sudo apt update
+27. On aws cloud server using linux, use this code to clone the repo and make the project live
+    sudo apt update
     sudo apt-get update
     sudo apt upgrade -y
     sudo apt install git curl unzip tar make sudo vim wget -y
 
     git clone "Your-repository"
-    sudo apt install python3-pip
+    sudo apt install python3-pip, python3-venv
+    python3 -m venv <your envname>
+    cd <envname>/bin/activate
     pip3 install -r requirements.txt
     python3 -m streamlit run StreamlitAPP.py
 

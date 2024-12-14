@@ -1,19 +1,20 @@
 import streamlit as st
 import json
 from langchain.callbacks import get_openai_callback
-from src.mcqgenerator.MCQGenerator import sequential_chain
 from src.mcqgenerator.utils import read_data_from_file, get_table_data
 from src.mcqgenerator.logger import logging
 from dotenv import load_dotenv
+load_dotenv()
 import traceback
+from src.mcqgenerator.MCQGenerator import sequential_chain
 
 json_format_string=''
 JSON_FORMAT_FILE_PATH = './mcq_format.json'
 with open(JSON_FORMAT_FILE_PATH) as file:
     json_format_string = json.load(file)
 
-logging.info('loading environment variable')
-load_dotenv()
+
+
 
 with st.form('Input_Form'):
     data_file = st.file_uploader('Upload the data file: ')

@@ -38,4 +38,18 @@ setup(
 25. mcqgenerator.py file has code to create LLM, LLMChain, SequentialChain etc
 26. run the app using command: streamlit run StreamlitApp.py.
 
- 
+27. sudo apt update
+    sudo apt-get update
+    sudo apt upgrade -y
+    sudo apt install git curl unzip tar make sudo vim wget -y
+
+    git clone "Your-repository"
+    sudo apt install python3-pip
+    pip3 install -r requirements.txt
+    python3 -m streamlit run StreamlitAPP.py
+
+28. if you want to add openai api key
+    create .env file in your server touch .env
+    vi .env #press insert #copy your api key and paste it there #press and then :wq and hit enter
+
+29. go with security and add the inbound rule add the port 8501
